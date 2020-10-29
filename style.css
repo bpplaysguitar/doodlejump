@@ -3,9 +3,11 @@
   height: 600px;
   background-color: rgb(161, 210, 255);
   position: relative;
-  font-size: 16rem;
+  font-size: 5rem;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  border: 3px solid hotpink;
 }
 
 .doodler {
@@ -20,12 +22,9 @@
 .platform {
   width: 85px;
   height: 20px;
-  background-image: url(./images/friskiesplatform.png);
+  background-image: url(./images/brick.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-}
-
-#btn {
-  cursor: pointer;
+  border: 1px solid black;
 }

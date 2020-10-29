@@ -15,7 +15,8 @@ let isGoingRight = false
 let leftTimerId
 let rightTimerId
 let score = 0
-let button = document.getElementById('btn')
+const btn = document.createElement('button');
+
 
 
 function createDoodler() {
@@ -117,7 +118,7 @@ function gameOver() {
   while (grid.firstChild) {
     grid.removeChild(grid.firstChild)  
   }
-  grid.innerHTML = score
+  grid.innerHTML =  "Your \n Score: \n " + "<br />" + score 
   clearInterval(upTimerId)
   clearInterval(downTimerId)
   clearInterval(leftTimerId)
@@ -180,7 +181,10 @@ function start() {
     document.addEventListener('keyup',control)
     }
   }
-  // attach to button
-start() 
 
+btn.innerText = 'Start Game';
+  document.body.appendChild(btn);
+  btn.addEventListener('click', () => {
+  start()
+  })
 })
