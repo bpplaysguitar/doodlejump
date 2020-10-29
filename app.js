@@ -77,7 +77,7 @@ function jump() {
   clearInterval(downTimerId)
   isJumping = true
   upTimerId = setInterval(function() {
-    doodlerBottomSpace += 20
+    doodlerBottomSpace += 15
     doodler.style.bottom = doodlerBottomSpace + 'px'
     if (doodlerBottomSpace > startPoint + 200) {
       fall()
@@ -98,7 +98,7 @@ function fall() {
     platforms.forEach(platform => {
       if (
           (doodlerBottomSpace >= platform.bottom) && 
-          (doodlerBottomSpace <= platform.bottom + 20) &&
+          (doodlerBottomSpace <= platform.bottom + 23) &&
           ((doodlerLeftSpace + 60) >= platform.left) &&
           (doodlerLeftSpace <= (platform.left + 85)) &&
           !isJumping

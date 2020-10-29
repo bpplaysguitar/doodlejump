@@ -1,13 +1,28 @@
+body {
+  align-items: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: rgb(235, 235, 235);
+  background-image: url(./images/131795-top-field-background-1920x1080.jpg);
+  color: white;
+  font-size: 1.1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
 .grid {
   width: 400px;
   height: 600px;
-  background-color: rgb(161, 210, 255);
+  background-color: rgb(76, 146, 211);
   position: relative;
   font-size: 5rem;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: uppercase;
-  border: 3px solid hotpink;
+  border: 5px solid blue;
+  margin: auto;
 }
 
 .doodler {
