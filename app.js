@@ -15,6 +15,8 @@ let isGoingRight = false
 let leftTimerId
 let rightTimerId
 let score = 0
+let button = document.getElementById('btn')
+
 
 function createDoodler() {
   grid.appendChild(doodler)
@@ -95,7 +97,7 @@ function fall() {
     platforms.forEach(platform => {
       if (
           (doodlerBottomSpace >= platform.bottom) && 
-          (doodlerBottomSpace <= platform.bottom + 15) &&
+          (doodlerBottomSpace <= platform.bottom + 20) &&
           ((doodlerLeftSpace + 60) >= platform.left) &&
           (doodlerLeftSpace <= (platform.left + 85)) &&
           !isJumping
@@ -179,6 +181,6 @@ function start() {
     }
   }
   // attach to button
-start()
+start() 
 
 })
