@@ -83,7 +83,6 @@ function jump() {
       fall()
     }
   },30)
-  
 }
 
 function fall() {
