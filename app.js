@@ -85,6 +85,8 @@ function jump() {
   },30)
 }
 
+
+
 function fall() {
   clearInterval(upTimerId)
   isJumping = false
@@ -110,6 +112,8 @@ function fall() {
 
   },30)
 }
+
+
 
 function gameOver() {
   console.log('game over')
